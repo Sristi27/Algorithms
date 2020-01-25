@@ -1,7 +1,0 @@
-Given an array of the number of votes given to each candidates so far,and an integer k equal to the number of voters who have not casted their vote yet
-find the number of candidates who still have the chance to win the election.
-INPUT:
-[2,3,5,2]
-K=3
-OUTPUT:
-2
