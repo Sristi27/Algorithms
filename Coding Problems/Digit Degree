@@ -1,0 +1,35 @@
+Lets say the degree of a number is defined as the number of times the number of times the number is to be replaced with the sum of digits
+till we get a single digit
+INPUT:5
+OUTPUT:0
+INPUT:100
+OUTPUT:1
+INPUT:91
+OUTPUT:2
+
+
+Code In Python:
+
+def sumdig(n):
+    l=[]
+    while n!=0:
+        l.append(n%10)
+        n=n/10
+    return sum(l)
+
+
+def countdig(n):
+    c=0
+    while n!=0:
+        c=c+1
+        n=n/10
+    return c
+
+
+n=int(input())
+t=0
+while countdig(n)>1:
+    c = sumdig(n)
+    n  = c
+    t = t+1
+print(t)
