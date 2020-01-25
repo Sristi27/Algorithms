@@ -5,3 +5,15 @@ INPUT:
 K=3
 OUTPUT:
 2
+
+code in python:
+
+l=[int(x) for x in input().split()]
+k=int(input())                           #no of voters still left to vote
+l.sort(reverse=True)
+m=max(l)
+CountForWinner=0
+for i in l:
+    if m-i<3:
+        CountForWinner=CountForWinner+1
+print(CountForWinner)
